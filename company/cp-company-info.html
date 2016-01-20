@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../favicon.ico">
+
+    <title>企业端</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">项目征集网站（企业端）</a>
+        </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../company/cp-company-info.html">企业端</a></li>
+            <li><a href="../city/index.html">市级单位</a></li>
+            <li><a href="../province/index.html">省级单位</a></li>
+            <li><a href="../admin/company-list.html">管理端</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="cp-company-info.html">企业信息<span class="sr-only">(current)</span> </a></li>
+            <li><a href="cp-project-list.html">已申报项目 </a></li>
+			<li><a href="cp-new-project.html">新建申报</a></li>
+            <li><a href="#">账号管理</a></li>
+            <li><a href="#">意见反馈</a></li>
+          </ul>
+
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">企业信息管理</h1>
+		   <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">基本信息</a></li>
+			<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">企业概况</a></li>
+			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">企业资质</a></li>
+			<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">其他信息</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="home">
+				<form class="form-horizontal" style="margin:10px;width:600px;">
+					  <div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">登录名称：</label>
+						<div class="col-sm-10">
+						  <input type="email" class="form-control" id="inputEmail3" placeholder="登录名称">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="inputPassword3" class="col-sm-2 control-label">登录密码：</label>
+						<div class="col-sm-10">
+						  <input type="password" class="form-control" id="inputPassword3" placeholder="登录密码">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">企业名称：</label>
+						<div class="col-sm-10">
+						  <input type="email" class="form-control" id="inputEmail3" placeholder="企业名称">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">企业类型：</label>
+						<div class="col-sm-10">
+							<select class="form-control">
+							  <option>民营企业</option>
+							  <option>国企/事业单位</option>
+							  <option>外资企业</option>
+							  <option>协会会员单位</option>
+							</select>
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">单位区域：</label>
+						<div class="col-sm-10">
+							<div class="row">
+								<div class="col-xs-4">
+								  <div class="input-group ">
+									<div class="input-group-addon">省</div>
+									<select class="form-control">
+									  <option>北京市</option>
+									  <option>山东省</option>
+									  <option>河北省</option>
+									  <option>安徽省</option>
+									  <option>重庆市</option>
+									</select>
+								  </div>
+								</div>
+								<div class="col-xs-4">
+								  <div class="input-group">
+									<div class="input-group-addon">市</div>
+									<select class="form-control">
+									  <option>海淀区</option>
+									  <option>丰台区</option>
+									  <option>朝阳区</option>
+									  <option>东城区</option>
+									  <option>西城区</option>
+									</select>
+								  </div>
+								</div>
+								<div class="col-xs-4">
+								  <div class="input-group">
+									<div class="input-group-addon">县</div>
+									<select class="form-control">
+									  <option>海淀区</option>
+									  <option>丰台区</option>
+									  <option>朝阳区</option>
+									  <option>东城区</option>
+									  <option>西城区</option>
+									</select>
+								  </div>
+								</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">详细地址：</label>
+						<div class="col-sm-10">
+						  <input type="email" class="form-control" id="inputEmail3" placeholder="详细地址">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">联系人：</label>
+						<div class="col-sm-10">
+						  <input type="email" class="form-control" id="inputEmail3" placeholder="联系人">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">联系电话：</label>
+						<div class="col-sm-10">
+						  <input type="email" class="form-control" id="inputEmail3" placeholder="联系电话">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">联系邮箱：</label>
+						<div class="col-sm-10">
+						  <input type="email" class="form-control" id="inputEmail3" placeholder="联系邮箱">
+						</div>
+					  </div>
+					  <div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+						  <button type="submit" class="btn btn-primary">更新企业信息</button>
+						</div>
+					  </div>
+				</form>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="profile">
+				<form class="form-horizontal" style="margin:10px;width:600px;">
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">企业简介：</label>
+						<div class="col-sm-10">
+						 <textarea class="form-control" rows="8" placeholder="企业简介、经营范围等"></textarea> 
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">主营产品：</label>
+						<div class="col-sm-10">
+						 <textarea class="form-control" rows="8" placeholder="主营产品（软件、硬件、中间材料等）"></textarea> 
+						</div>
+					</div>
+				</form>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="messages">
+				<form class="form-horizontal" style="margin:10px;width:600px;">
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">工商经营许可：</label>
+						<div class="col-sm-10">
+						 <textarea class="form-control" rows="8" placeholder="企业简介、经营范围等"></textarea> 
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">银行证明：</label>
+						<div class="col-sm-10">
+						 <textarea class="form-control" rows="8" placeholder="主营产品（软件、硬件、中间材料等）"></textarea> 
+						</div>
+					</div>	
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">银行证明：</label>
+						<div class="col-sm-10">
+						 <textarea class="form-control" rows="8" placeholder="主营产品（软件、硬件、中间材料等）"></textarea> 
+						</div>
+					</div>						
+				</form>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="settings">
+				<form class="form-horizontal" style="margin:10px;width:600px;">
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">工商经营许可：</label>
+						<div class="col-sm-10">
+						 <textarea class="form-control" rows="8" placeholder="企业简介、经营范围等"></textarea> 
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">银行证明：</label>
+						<div class="col-sm-10">
+						 <textarea class="form-control" rows="8" placeholder="主营产品（软件、硬件、中间材料等）"></textarea> 
+						</div>
+					</div>	
+					<div class="form-group">
+						<label for="inputEmail3" class="col-sm-2 control-label">银行证明：</label>
+						<div class="col-sm-10">
+						 <textarea class="form-control" rows="8" placeholder="主营产品（软件、硬件、中间材料等）"></textarea> 
+						</div>
+					</div>						
+				</form>
+			</div>
+		  </div>
+
+		</div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
